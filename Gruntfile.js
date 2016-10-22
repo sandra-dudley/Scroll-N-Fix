@@ -17,6 +17,17 @@ module.exports = function(grunt) {
         dest: 'build/scrollnfix.min.js'
       }
     },
+    prettify: {
+      options: {
+      },
+      all: {
+        expand: true,
+        cwd: 'example/',
+        ext: '.html',
+        src: ['*.html'],
+        dest: 'examplepretty/'
+      }
+    }
 
   });
 
@@ -24,6 +35,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // Load the plugin that provides the jshint task
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  // Load the plugin that prettifies HTML file
+  grunt.loadNpmTasks('grunt-prettify');
 
   // Default task(s).
   grunt.registerTask('default', ['uglify']);

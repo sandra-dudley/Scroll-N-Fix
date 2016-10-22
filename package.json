@@ -1,13 +1,17 @@
 {
   "name": "scrollnfix",
   "version": "1.0.0",
-  "keywords": ["template", "benchmark"],
+  "keywords": [
+    "template",
+    "benchmark"
+  ],
   "repository": "https://github.com/sandra-dudley/Scroll-N-Fix",
   "author": "Sandra Dudley <sandra.dudley@ymail.com>",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "^2.0.0"
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-prettify": "^0.4.0"
   }
 }
