@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="../build/scrollnfix.min.js"></script>
+    <style>
+      div {
+        height:2000px;
+        width: 100%;
+      }
+      #target {
+        position:relative;
+        background: url(http://www.w3schools.com/css/trolltunga.jpg) no-repeat center center;
+        background-size: 100%;
+        background-attachment:scroll;
+        background-position:top;
+      }
+      #another {
+        position:relative;
+        background: url(http://www.freedigitalphotos.net/images/img/homepage/87357.jpg) no-repeat center center;
+        background-size: 100%;
+        background-attachment:scroll;
+        background-position:top;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div></div>
+    <div id="myContainer">
+    <div id="target" data-fix>Target div</div>
+    <div id="another" data-fix>target</div>
+    </div>
+    <script type="text/javascript">
+
+      scrollnfix.init();
+    </script>
+  </body>
+
+</html>
