@@ -22,10 +22,10 @@ module.exports = function(grunt) {
       },
       all: {
         expand: true,
-        cwd: 'example/',
+        cwd: 'examples/example/',
         ext: '.html',
         src: ['*.html'],
-        dest: 'examplepretty/'
+        dest: 'exemples/examplepretty/'
       }
     }
   });
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Load the plugin that prettifies HTML file
   grunt.loadNpmTasks('grunt-prettify');
-  
+
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
 
