@@ -1,3 +1,9 @@
+/*!
+ * Scroll'N'Fix v1.0.0: Fixes the background image of an element when it reaches the top of the browser
+ * (c) 2016 Sandra Dudley
+ * MIT License
+ * https://github.com/sandra-dudley/Scroll-N-Fix
+ */
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([], factory(root));
