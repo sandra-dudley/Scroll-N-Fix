@@ -2,7 +2,7 @@ Scroll'N'Fix
 ==
 A simple Vanilla JS plugin that fixes the background image of an element when it reaches the top of the browser.
 
-[See Scroll'N'Fix example here] [https://cdn.rawgit.com/sandra-dudley/Scroll-N-Fix/master/examples/example_pretty/example1.html]
+[See Scroll'N'Fix example here](https://cdn.rawgit.com/sandra-dudley/Scroll-N-Fix/master/examples/example_pretty/example1.html)
 
 Script
 --
