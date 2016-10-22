@@ -32,6 +32,6 @@ CSS
 --
 Set the initial `background-attachment` to `scroll` and the `position` to `relative`
 
-Know issues
+Known issues
 --
 The background image _jumps_ when it fixes at the top of the screen. If ever you know a good fix, please pull a request.
