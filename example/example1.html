@@ -2,37 +2,86 @@
 <html>
 
   <head>
-    <link rel="stylesheet" href="style.css">
+    <title>Scroll'N'Fix plugin | Simple example</title>
+    <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
     <script src="../build/scrollnfix.min.js"></script>
     <style>
-      div {
-        height:2000px;
-        width: 100%;
-      }
-      #target {
-        position:relative;
-        background: url(http://www.w3schools.com/css/trolltunga.jpg) no-repeat center center;
-        background-size: 100%;
-        background-attachment:scroll;
-        background-position:top;
-      }
-      #another {
-        position:relative;
-        background: url(http://www.freedigitalphotos.net/images/img/homepage/87357.jpg) no-repeat center center;
-        background-size: 100%;
-        background-attachment:scroll;
-        background-position:top;
-      }
+    body {
+      height:2000px;
+      background:#b20000;
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.3;
+      padding:0;
+      margin:0;
+    }
 
+      .text {
+        width:30%;
+        background: rgba(178,0,0,0.8);
+        padding:10px;
+        color: #ffffff;
+        text-align: center;
+      }
+      #div1 .text {
+        background: rgba(0,0,0,0.6)
+      }
+      h1 {
+        font-family: 'Aladin', sans-serif;
+        font-weight: normal;
+        font-size: 3em;
+        margin:0;
+      }
+      h2 {
+        font-family: 'Aladin', sans-serif;
+        font-weight: normal;
+        font-size: 2em;
+        margin:0;
+      }
+      #div1 {
+        background: url(img/China-pattern-3.jpg) no-repeat center center;
+        background-size: 100%;
+      }
+      #div2 {
+        background: url(img/China-pattern-4.jpg) no-repeat center center;
+        background-size: 100%;
+      }
+      #div3 {
+        background: url(img/China-pattern-1.jpg) no-repeat center center;
+        background-size: 100%;
+      }
+      .container {
+        height:500px;
+        width: 100%;
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-attachment:scroll;
+        background-position:top;
+      }
     </style>
   </head>
 
   <body>
 
-    <div></div>
+    <div class="container" id="div3" data-fix>
+    <div class="text"><h1>Scroll'N'Fix</h1>
+    <p>
+      Vanilla JS plugin - Fix scrolled image backgrounds when the element reaches the top of the browser.
+    </p></div></div>
     <div id="myContainer">
-    <div id="target" data-fix>Target div</div>
-    <div id="another" data-fix>target</div>
+    <div class="container" id="div1" data-fix>
+        <div class="text">
+          <h2>Data-fix</h2>
+          <p>Just add this attribute to the div that contains the background image</p>
+        </div>
+    </div>
+    <div class="container" id="div2" data-fix>
+      <div class="text">
+        <h2>Call the script</h2>
+        <p><code>scrollnfix.init()</code> is all you need to add.</p>
+      </div>
+    </div>
     </div>
     <script type="text/javascript">
 
