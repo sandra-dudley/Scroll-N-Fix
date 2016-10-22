@@ -27,11 +27,7 @@ module.exports = function(grunt) {
         src: ['*.html'],
         dest: 'examplepretty/'
       }
-    },
-    qunit: {
-      files: ['test/*.html']
-    },
-
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -40,9 +36,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Load the plugin that prettifies HTML file
   grunt.loadNpmTasks('grunt-prettify');
-  // Load qunit
-  grunt.loadNpmTasks('grunt-contrib-qunit');
-
+  
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
 

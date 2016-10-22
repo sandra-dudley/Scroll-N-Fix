@@ -111,11 +111,12 @@
      * changes the background attachment value depending on the position of the target
      * @private
      */
-    var toggleFixScroll = function(event) {
+    var toggleFixScroll = function() {
+        targets = getAllElementsWithAttribute("data-fix");
         for (var i = 0; i < targets.length; i++) {
-            target = targets[i];
+            var target = targets[i];
             if (isIOS === false) { // problem with ios, doesn't like the fixed background
-                container.style.position = "relative";
+
                 if (findPos(container, target) > 0 && target.style.backgroundAttachment != "fixed") {
                     target.style.backgroundAttachment = "fixed";
                 } else if (findPos(container, target) < 0 && target.style.backgroundAttachment != "scroll") {
@@ -141,8 +142,10 @@
         isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
         targets = getAllElementsWithAttribute("data-fix");
         container = targets[0].parentNode;
+        container.style.position = "relative";
 
         window.addEventListener("scroll", toggleFixScroll, false);
+
     };
 
 
